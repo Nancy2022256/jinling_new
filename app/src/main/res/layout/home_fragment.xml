@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout.JettRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gray"
+    tools:context="home.fragment.homeFragment">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:background="@drawable/top"
+            android:elevation="10dp">
+
+            <FrameLayout
+                android:layout_width="353dp"
+                android:layout_height="130dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="100dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/peng_peng">
+
+                <Button
+                    android:id="@+id/btn_study"
+                    android:layout_width="108dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24dip"
+                    android:layout_marginTop="80dip"
+                    android:text="立即学习"
+                    android:textSize="16sp" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/lin_top"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/lin_road"
+                    android:layout_width="65dip"
+                    android:layout_height="80dip"
+                    android:layout_marginLeft="50dip"
+                    android:layout_marginTop="14dip"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/img_road"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:src="@drawable/plane" />
+
+                    <TextView
+                        android:id="@+id/text_road"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:text="取件路线"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lin_message"
+                    android:layout_width="65dip"
+                    android:layout_height="80dip"
+                    android:layout_marginLeft="50dip"
+                    android:layout_marginTop="14dip"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/img_message"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:src="@drawable/card" />
+
+                    <TextView
+                        android:id="@+id/text_message"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:text="快件信息"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="13sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lin_light"
+                    android:layout_width="65dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="14dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/img_light"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:src="@drawable/light" />
+
+                    <TextView
+                        android:id="@+id/text_light"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:text="亮灯"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="13sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="240dp">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="35dp"
+                android:text="已到达"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#2E2D2D"
+                android:background="@drawable/text_bottom"/>
+            <TextView
+                android:id="@+id/more"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="205dp"
+                android:textAlignment="center"
+                android:text="查看全部 >"
+                android:textSize="20dp"
+                android:textStyle="bold"
+
+                android:textColor="#2E2D2D"/>
+
+        </LinearLayout>
+
+        <androidx.viewpager.widget.ViewPager
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_marginTop="280dp"
+            android:clipChildren="false"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:background="@color/black"/>
+    </FrameLayout>
+
+
+</layout.JettRelativeLayout>
